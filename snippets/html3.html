@@ -1,0 +1,15 @@
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            function vectorMagnitude (vector) {
+                return Math.sqrt(vector
+                .map(el => el * el)
+                .reduce((accumulator, current) => 
+                {
+                  return accumulator + current
+                }, 0))
+            }
+        </script>
+    </body>
+</html>
